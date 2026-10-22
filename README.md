@@ -1,4 +1,4 @@
-# To-do List com Recoil (Módulo 20)
+# To-do List com Recoil
 
 Aplicação de lista de tarefas desenvolvida em React utilizando a biblioteca **Recoil** para gerenciamento de estado global através de Átomos e Seletores.
 
