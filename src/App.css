@@ -1,0 +1,124 @@
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 16px;
+}
+
+header h1 {
+  color: #111827;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input {
+  padding: 12px 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #111827;
+  background-color: #ffffff;
+}
+
+.todo-form button {
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todo-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.todo-filters button {
+  padding: 8px 16px;
+  border: 2px solid #d1d5db;
+  background-color: #f3f4f6;
+  color: #111827;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.todo-filters button.active {
+  background-color: #111827;
+  color: #ffffff;
+  border-color: #111827;
+}
+
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.todo-item span {
+  flex: 1;
+  cursor: pointer;
+  color: #111827;
+  font-weight: 500;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.btn-remove {
+  background-color: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.empty {
+  text-align: center;
+  color: #4b5563;
+}
+
+@media (min-width: 480px) {
+  .todo-form {
+    flex-direction: row;
+  }
+  .todo-form input {
+    flex: 1;
+  }
+}
